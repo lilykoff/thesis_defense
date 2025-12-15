@@ -1,28 +1,42 @@
-/*-- scss:defaults --*/
+/* ===============================
+   JHU COLOR PALETTE
+   =============================== */
 
-// OKABE–ITO colorblind palette
-$black:    #000000;
-$orange:   #E69F00;
-$sky:      #56B4E9;
-$green:    #009E73;
-$yellow:   #F0E442;
-$blue:     #0072B2;
-$red:      #D55E00;
-$pink:     #CC79A7;
+$heritage-blue: #002D72;
+$spirit-blue:   #68ACE5;
 
-// Background and text
-$body-bg: #f2ede3;         // soft warm beige
-$body-color: $black;
-$link-color: $blue;
-$code-color: $red;
+$medium-blue:   #0077D8;
+$harbor-blue:   #4E97E0;
 
-// Fonts
+$gold:          #F1C400;
+
+$white:         #FFFFFF;
+$black:         #000000;
+$sable:         #31261D;
+
+/* ===============================
+   BACKGROUND & TEXT
+   =============================== */
+
+$body-bg: #FFFFFF;
+$body-color: $sable;
+
+$link-color: $heritage-blue;
+$code-color: $medium-blue;
+
+/* ===============================
+   FONTS
+   =============================== */
+
 $font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $presentation-font-size-root: 32px;
 
 /*-- scss:rules --*/
 
-// Slide layout
+/* ===============================
+   SLIDE LAYOUT
+   =============================== */
+
 .reveal {
   background-color: $body-bg;
   color: $body-color;
@@ -33,116 +47,144 @@ $presentation-font-size-root: 32px;
   max-width: 1200px;
 }
 
-// Headings
-.reveal h1, .reveal h2, .reveal h3 {
-  color: $black;
+/* ===============================
+   HEADINGS
+   =============================== */
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: $heritage-blue;
   font-weight: 700;
 }
 
 .reveal h2 {
-  border-bottom: 3px solid $orange;
+  border-bottom: 4px solid $spirit-blue;
   display: inline-block;
-  padding-bottom: 0.1em;
+  padding-bottom: 0.15em;
 }
 
-// Links
+/* ===============================
+   LINKS
+   =============================== */
+
 .reveal a {
   text-decoration: none;
-  border-bottom: 1px solid lighten($blue, 30%);
+  color: $heritage-blue;
+  border-bottom: 2px solid lighten($heritage-blue, 40%);
   transition: 0.2s;
 }
+
 .reveal a:hover {
-  color: darken($blue, 10%);
-  border-bottom: 1px solid $blue;
+  color: darken($heritage-blue, 10%);
+  border-bottom-color: $heritage-blue;
 }
 
-// Figures
-.reveal img, .reveal .figure {
+/* ===============================
+   FIGURES
+   =============================== */
+
+.reveal img,
+.reveal .figure {
   border-radius: 12px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-  margin-top: 1em;
-  margin-bottom: 1em;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  margin: 1em auto;
   max-width: 90%;
 }
 
-// Footer
+/* ===============================
+   FOOTER
+   =============================== */
+
 .reveal footer {
   font-size: 0.6em;
-  color: lighten($black, 30%);
-  border-top: 1px solid lighten($black, 60%);
+  color: lighten($sable, 25%);
+  border-top: 1px solid lighten($sable, 65%);
   margin-top: 2em;
   padding-top: 0.5em;
 }
 
-// Section divider slides
+/* ===============================
+   SECTION DIVIDER SLIDES
+   =============================== */
+
 .section-slide {
-  background-color: $orange;
-  color: #fff;
+  background-color: $heritage-blue;
+  color: $white;
   text-align: center !important;
 }
 
 .section-slide h1,
 .section-slide h2 {
-  color: #fff;
-  font-weight: 700;
+  color: $white;
   border: none;
   letter-spacing: 0.5px;
 }
 
 .section-slide p {
-  color: #f9f9f9;
+  color: lighten($white, 10%);
   font-size: 1.2em;
 }
 
-/* Highlighted section in Outline slides */
+/* ===============================
+   HIGHLIGHT BOXES
+   =============================== */
+
 .reveal .highlight {
-  background-color: rgba(230, 159, 0, 0.15); /* transparent orange */
-  border-left: 5px solid #E69F00;
+  background-color: rgba(104, 172, 229, 0.15); /* Spirit Blue */
+  border-left: 6px solid $spirit-blue;
   padding-left: 1em;
   border-radius: 8px;
 }
 
 .reveal .highlight h3,
 .reveal .highlight strong {
-  color: #E69F00;
+  color: $heritage-blue;
 }
 
+/* ===============================
+   COLUMNS
+   =============================== */
 
 .reveal .column h3 {
   margin-top: 0;
-  color: #0072B2; /* or $blue from your palette */
+  color: $medium-blue;
 }
 
-/* custom.scss */
+/* ===============================
+   MEDIA HELPERS
+   =============================== */
+
 .reveal .gif-inline {
   max-width: 48%;
-  height: auto;
   display: inline-block;
 }
+
 .reveal .gif-stack {
   max-height: 35vh;
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
-.equalheight {
-  height: 550px !important;
-  width: auto;
-  object-fit: contain;
-}
+/* ===============================
+   QUESTION BULLETS
+   =============================== */
 
-/* Question mark bullets */
 .question-bullets li::marker {
-  content: "? ";           /* replace bullet with ? */
-  font-weight: bold;      /* bold ? only */
-  font-size: 1.5em;       /* make ? bigger */
-  color: black;         /* pick from your palette */
+  content: "? ";
+  font-size: 1.3em;
+  color: $gold;
+  font-weight: bold;
 }
 
+/* ===============================
+   FOOTER LOGO
+   =============================== */
 
-.fit {
-  font-size: calc(1.2vw + 1.2vh);
-  line-height: 1.1;
+.reveal .footer-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 110px;
+  opacity: 0.9;
+  z-index: 30;
 }
