@@ -451,7 +451,6 @@ final_plot
 - Can we identify someone from their walking pattern measured by a wrist-worn accelerometer in big, free-living datasets? 
   - Can we accurately find walking and count steps in free-living datasets? 
   - Can we generalize conclusions from free-living accelerometry data to the US population? 
-- Can we apply these methods in other high-frequency data sources? 
 :::
 
 </div>
@@ -465,7 +464,6 @@ final_plot
 - <span style="color:gray;">Can we identify someone from their walking pattern measured by a wrist-worn accelerometer in big, free-living datasets?</span>
   - <span style="color:gray;">Can we accurately find walking and count steps in free-living datasets? </span>
   - <span style="color:gray;">Can we generalize conclusions from free-living accelerometry data to the US population?</span> 
-- <span style="color:gray;">Can we apply these methods in other high-frequency data sources? </span>
 
 </div>
 # Can we identify someone from their walking pattern measured by a wrist-worn accelerometer?
@@ -2377,7 +2375,7 @@ $\rightarrow$ Yes!
 - <span style="color:gray;">Can we identify someone from their walking pattern measured by a wrist-worn accelerometer in big, free-living datasets?</span>
   - <span style="color:gray;">Can we accurately find walking and count steps in free-living datasets? </span>
   - <span style="color:gray;">Can we generalize conclusions from free-living accelerometry data to the US population?</span> 
-- <span style="color:gray;">Can we apply these methods in other high-frequency data sources? </span>
+
 </div>
 
 ---
@@ -2391,7 +2389,7 @@ $\rightarrow$ Yes!
 - Can we identify someone from their walking pattern measured by a wrist-worn accelerometer in big, free-living datasets?
   - <span style="color:gray;">Can we accurately find walking and count steps in free-living datasets? </span>
   - <span style="color:gray;">Can we generalize conclusions from free-living accelerometry data to the US population?</span> 
-- <span style="color:gray;">Can we apply these methods in other high-frequency data sources? </span>
+
 
 </div>
 ---
@@ -2404,7 +2402,6 @@ $\rightarrow$ Yes!
 - Can we identify someone from their walking pattern measured by a wrist-worn accelerometer in big, free-living datasets?
   - Can we accurately find walking and count steps in free-living datasets? 
   - <span style="color:gray;">Can we generalize conclusions from free-living accelerometry data to the US population?</span> 
-- <span style="color:gray;">Can we apply these methods in other high-frequency data sources? </span>
 
 </div>
 
@@ -2651,7 +2648,6 @@ dose_resp %>%
 <br>
   $\rightarrow$ Yes! 
   - <span style="color:gray;">Can we generalize conclusions from free-living accelerometry data to the US population?</span> 
-- <span style="color:gray;">Can we apply these methods in other high-frequency data sources? </span>
 
 </div>
 
@@ -2667,7 +2663,6 @@ dose_resp %>%
 <br>
   <span style="color:gray;">$\rightarrow$ Yes! </span>
   - Can we generalize conclusions from free-living accelerometry data to the US population?
-- <span style="color:gray;">Can we apply these methods in other high-frequency data sources? </span>
 </div>
 
 
@@ -2973,7 +2968,6 @@ p1 +
   - Can we generalize conclusions from free-living accelerometry data to the US population?
 <br>
   $\rightarrow$ Yes! 
-- <span style="color:gray;">Can we apply these methods in other high-frequency data sources? </span>
 </div>
 
 ---
@@ -2990,7 +2984,6 @@ p1 +
   - <span style="color:gray;">Can we generalize conclusions from free-living accelerometry data to the US population?</span>
 <br>
   <span style="color:gray;">$\rightarrow$ Yes! </span>
-- <span style="color:gray;">Can we apply these methods in other high-frequency data sources? </span>
 </div>
 
 
@@ -3102,331 +3095,7 @@ $\rightarrow$ Yes!
   - <span style="color:gray;">Can we generalize conclusions from free-living accelerometry data to the US population?</span>
 <br>
   <span style="color:gray;">$\rightarrow$ Yes! </span>
-- <span style="color:gray;">Can we apply these methods in other high-frequency data sources? </span>
 </div>
-
----
-
-## Outline {.question-bullets}
-<div style="font-size: 115%;">
-- <span style="color:gray;">Can we identify someone from their walking pattern measured by a wrist-worn accelerometer? *(Digital fingerprinting)* </span>
-<br>
-<span style="color:gray;">$\rightarrow$ Yes! </span>
-- <span style="color:gray;">Can we identify someone from their walking pattern measured by a wrist-worn accelerometer in big, free-living datasets?</span>
-<br>
-<span style="color:gray;">$\rightarrow$ Yes! </span>
-  - <span style="color:gray;">Can we accurately find walking and count steps in free-living datasets? </span> 
-<br>
-    <span style="color:gray;">$\rightarrow$ Yes! </span>
-  - <span style="color:gray;">Can we generalize conclusions from free-living accelerometry data to the US population?</span>
-<br>
-  <span style="color:gray;">$\rightarrow$ Yes! </span>
-- Can we apply these methods in other high-frequency data sources?
-</div>
-
-
-# Can we apply these methods in other high-frequency data sources?
-
----
-
-### Hemodynamics and cardiac surgery 
-
-+ Coronary artery bypass surgery (CABG): most common heart surgery globally
-+ Acute kidney injury (AKI): common complication leading to increased morbidity and mortality 
-+ Pipeline to process, visualize, and analyze minute-level multivariate hemodynamics data collected during cardiac surgery [@blood]
-+ Methods to model relationship between hemodynamics during surgery and AKI [@fine_mapping]
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-![](figs/cabg.jpeg){width="45%"}
-
-:::
-
-::: {.column width="50%"}
-
-![](figs/cpb.jpeg)
-
-:::
-
-::::
-
----
-
-### Arterial waveform 
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-![](figs/a_line.png){.equalheight}
-
-:::
-
-::: {.column width="50%"}
-
-
-:::
-
-::::
-
----
-
-### Arterial waveform 
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-![](figs/a_line.png){.equalheight}
-
-:::
-
-::: {.column width="50%"}
-
-
-![](figs/abp4.png){.equalheight}
-:::
-
-::::
-
----
-
-### Arterial waveform 
-
-```{r abp 2 pts}
-#| cache: true 
-
-
-start = 5000
-p0 = 
-  hemo_data0 %>% 
-  mutate(floor_sec = floor(relative_time_sec)) %>% 
-  filter(floor_sec >= start & floor_sec < start + 10) %>% 
-  ggplot(aes(x = relative_time_sec, y = abp)) +
-  geom_line(linewidth = 1.1) +
-  scale_x_continuous(breaks = seq(start, start + 10, 1),
-                     labels = seq(0, 10, 1)) +
-  scale_y_continuous(limits=c(48, 120), breaks=seq(50,120,10)) +
-  labs(x = "Time (s)", y = "Arterial Blood Pressure (mmHg)",
-       title = "10s of Arterial Waveform", 
-       subtitle = "Patient 1")
-
-p1 = 
-  hemo_data %>% 
-  mutate(floor_sec = floor(relative_time_sec)) %>% 
-  filter(floor_sec >= start & floor_sec < start + 10) %>% 
-  ggplot(aes(x = relative_time_sec, y = abp)) +
-  geom_line(linewidth = 1.1) +
-  scale_x_continuous(breaks = seq(start, start + 10, 1),
-                     labels = seq(0, 10, 1)) +
-    scale_y_continuous(limits=c(48, 120), breaks=seq(50,120,10)) +
-  labs(x = "Time (s)", y = "Arterial Blood Pressure (mmHg)",
-       title = "10s of Arterial Waveform", 
-       subtitle = "Patient 2")
-
-p0 + p1
-```
-
----
-
-### Fingerprinting with arterial waveform
-
-```{r fprint waveform1}
-#| cache: true
-x = hemo_data %>%
-  filter(cat_cpb %in% c("pre", "post") & cat_anes == "intra") %>%
-  mutate(time = floor_date(time, unit = "seconds"))
-
-seconds = unique(x$time)
-set.seed(123)
-sec_sample = sample(seconds, 10 * 60, replace = FALSE)
-dens_df =
- x %>% 
- filter(time %in% sec_sample) %>% 
- mutate(cat_cpb = factor(cat_cpb, labels = c("Post-CPB", "Pre-CPB")),
-        cat_cpb = forcats::fct_rev(cat_cpb)) %>% 
- group_by(time, cat_cpb) %>%
- mutate(lag_abp = lag(abp, n = 18)) %>%
- ungroup()  %>%
- drop_na()
-
-dens_df$density = get_density(dens_df$abp, dens_df$lag_abp, n = 120 - 18)
-  
-dens_df2 =
- x %>% 
- filter(time %in% sec_sample) %>% 
- mutate(cat_cpb = factor(cat_cpb, labels = c("Post-CPB", "Pre-CPB")),
-        cat_cpb = forcats::fct_rev(cat_cpb)) %>% 
- group_by(time, cat_cpb) %>%
- mutate(lag_abp = lag(abp, n = 36)) %>%
- ungroup()  %>%
- drop_na()
-
-dens_df2$density = get_density(dens_df2$abp, dens_df2$lag_abp, n = 120 - 36)
-
-dens_df3 =
- x %>% 
- filter(time %in% sec_sample) %>% 
- mutate(cat_cpb = factor(cat_cpb, labels = c("Post-CPB", "Pre-CPB")),
-        cat_cpb = forcats::fct_rev(cat_cpb)) %>% 
- group_by(time, cat_cpb) %>%
- mutate(lag_abp = lag(abp, n = 54)) %>%
- ungroup()  %>%
- drop_na()
-
-dens_df3$density = get_density(dens_df3$abp, dens_df3$lag_abp, n = 120 - 54)
-  
-pt1 = dens_df %>% 
-  mutate(lag = "Lag = 0.15s") %>% 
-  bind_rows(dens_df2 %>% mutate(lag = "Lag = 0.30s")) %>% 
-  bind_rows(dens_df3 %>% mutate(lag = "Lag = 0.45s")) %>% 
-  ggplot(aes(x=abp, y = lag_abp, group = time, color = density)) +
-  facet_grid(lag~.) +
-  geom_point(size = .5, alpha = .1) +
-  scale_color_viridis(name = "Density", option = "B") +
-  labs(x = "ABP (mmHg)", y = "Lag ABP (mmHg)", title = "Fingerprint",  subtitle = "Patient 1") +
-  scale_x_continuous(limits = c(40,150)) +
-  scale_y_continuous(limits = c(40,150)) 
-  
-```
-
-
-
-```{r fprint waveform2}
-#| cache: true
-x = hemo_data0 %>%
-  filter(cat_cpb %in% c("pre", "post") & cat_anes == "intra") %>%
-  mutate(time = floor_date(time, unit = "seconds"))
-
-seconds = unique(x$time)
-set.seed(123)
-sec_sample = sample(seconds, 10 * 60, replace = FALSE)
-dens_df =
- x %>% 
- filter(time %in% sec_sample) %>% 
- mutate(cat_cpb = factor(cat_cpb, labels = c("Post-CPB", "Pre-CPB")),
-        cat_cpb = forcats::fct_rev(cat_cpb)) %>% 
- group_by(time, cat_cpb) %>%
- mutate(lag_abp = lag(abp, n = 18)) %>%
- ungroup()  %>%
- drop_na()
-
-dens_df$density = get_density(dens_df$abp, dens_df$lag_abp, n = 120 - 18)
-  
-dens_df2 =
- x %>% 
- filter(time %in% sec_sample) %>% 
- mutate(cat_cpb = factor(cat_cpb, labels = c("Post-CPB", "Pre-CPB")),
-        cat_cpb = forcats::fct_rev(cat_cpb)) %>% 
- group_by(time, cat_cpb) %>%
- mutate(lag_abp = lag(abp, n = 36)) %>%
- ungroup()  %>%
- drop_na()
-
-dens_df2$density = get_density(dens_df2$abp, dens_df2$lag_abp, n = 120 - 36)
-
-dens_df3 =
- x %>% 
- filter(time %in% sec_sample) %>% 
- mutate(cat_cpb = factor(cat_cpb, labels = c("Post-CPB", "Pre-CPB")),
-        cat_cpb = forcats::fct_rev(cat_cpb)) %>% 
- group_by(time, cat_cpb) %>%
- mutate(lag_abp = lag(abp, n = 54)) %>%
- ungroup()  %>%
- drop_na()
-
-dens_df3$density = get_density(dens_df3$abp, dens_df3$lag_abp, n = 120 - 54)
-  
-pt2 = dens_df %>% 
-  mutate(lag = "Lag = 0.15s") %>% 
-  bind_rows(dens_df2 %>% mutate(lag = "Lag = 0.30s")) %>% 
-  bind_rows(dens_df3 %>% mutate(lag = "Lag = 0.45s")) %>% 
-  ggplot(aes(x=abp, y = lag_abp, group = time, color = density)) +
-  facet_grid(lag~.) +
-  geom_point(size = .5, alpha = .1) +
-  scale_color_viridis(name = "Density", option = "B") +
-  labs(x = "ABP (mmHg)", y = "Lag ABP (mmHg)", title = "Fingerprint",  subtitle = "Patient 2") +
-  scale_x_continuous(limits = c(40, 150)) +
-  scale_y_continuous(limits = c(40, 150))
-
-pt1 + pt2
-  
-```
-
----
-
-### Fingerprinting with arterial waveform
-
-<div style="font-size: 150%;">
-
-+ Obtain predictors for many different lags and cut points
-+ Use predictors that are top 10 contributors to first 30 PCs ($\approx$ 100 predictors)
-+ Fit XGBoost model on 727 patients
-+ Mean (SD)  7 (1.8) minutes per patient, range 3-16 minutes
-
-</div>
-
----
-
-### Fingerprinting with arterial waveform
-
-```{r xgb accuracy}
-#| cache: true
-mean_preds %>% 
-  mutate(correct = 
-           if_else(true_subject == model & true_subject %in% correct$true_subject, 1, 0)) %>% 
-  ggplot(aes(x = factor(true_subject), y = mean_pred, color = factor(correct))) + 
-  geom_jitter(width = .1, size = .75, alpha = 0.5) +
-  theme(legend.position = "bottom",
-        axis.text.x = element_blank(),
-        panel.grid.major.x = element_blank(),
-        panel.grid.minor.x = element_blank(),
-        legend.text = element_text(size = 14),
-        legend.title = element_text(size = 15)) +
-  scale_color_manual(values = c("#A45C98", "#008767"),
-                     labels = c("Models trained for other patients", "Model trained for correct patient"),
-                     name = "Prediction from:") + 
-  labs(x = "Patient", y = "Predicted Probability",
-       title = "Predicted Probabilities from XGBoost Model",
-       subtitle = "94% rank-1, 99% rank-5 accuracy on test set") +
-  guides(color = guide_legend(override.aes = list(size = 4, alpha = 1))) +
-  scale_y_continuous(breaks = seq(0, 0.7, 0.1)) +
-  annotate(geom = "text",
-           color = "#444444",
-           hjust = 0,
-           label = "Green point above pink points in each column\nindicates correct identification",
-           x = "325", y = 0.59) +
-  geom_segment(xend = "272", x = "325", y = 0.6, yend = 0.6,
-    arrow = arrow(length = unit(0.1, "inches"), type = "closed"),
-    color = "#444444",
-    linewidth = .5)
-
-
-```
-
----
-
-## Outline {.question-bullets}
-<div style="font-size: 115%;">
-- <span style="color:gray;">Can we identify someone from their walking pattern measured by a wrist-worn accelerometer? *(Digital fingerprinting)* </span>
-<br>
-<span style="color:gray;">$\rightarrow$ Yes! </span>
-- <span style="color:gray;">Can we identify someone from their walking pattern measured by a wrist-worn accelerometer in big, free-living datasets?</span>
-<br>
-<span style="color:gray;">$\rightarrow$ Yes! </span>
-  - <span style="color:gray;">Can we accurately find walking and count steps in free-living datasets? </span> 
-<br>
-  <span style="color:gray;">$\rightarrow$ Yes! </span>
-  - <span style="color:gray;">Can we generalize conclusions from free-living accelerometry data to the US population?</span>
-<br>
-  <span style="color:gray;">$\rightarrow$ Yes! </span>
-- Can we apply these methods in other high-frequency data sources?
-<br>
-$\rightarrow$ Yes!
-</div>
-
 
 ---
 
@@ -3434,14 +3103,41 @@ $\rightarrow$ Yes!
 <div style="font-size: 150%;">
 
 ::: {.incremental}
-+ Changes in fingerprint (both walking and waveform) to predict changes in function
-+ Designing real-time interventions based on arterial waveform during surgery
++ Applying fingerprinting methods in other data sources (e.g. artertial waveform; see Appendix)
++ Changes in fingerprint to predict changes in function
 + Extending survey function on scalar regression to longitudinal outcomes 
 + Standardizing processing and analysis pipelines for wearable accelerometry 
 
 :::
 
 </div>
+
+# Acknowledgments 
+
+---
+
+### Family 
+
+![](figs/Family.png)
+
+---
+
+### JHU family
+
+![](figs/School.png)
+
+
+---
+
+### Baltimore family 
+
+![](figs/Baltimore.png)
+
+---
+
+### Harvard family 
+
+![](figs/Harvard.png) 
 
 ---
 
@@ -3457,7 +3153,7 @@ $\rightarrow$ Yes!
 </div>
 <br>
 
-![](figs/qr_code_nourl.png){width=35%}
+![](figs/qr-tinyurl-com_nurl.png){width=35%}
 
 ---
 
