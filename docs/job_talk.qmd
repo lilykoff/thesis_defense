@@ -3103,7 +3103,7 @@ $\rightarrow$ Yes!
 <div style="font-size: 150%;">
 
 ::: {.incremental}
-+ Applying fingerprinting methods in other data sources (e.g. artertial waveform; see Appendix)
++ Applying fingerprinting methods in other data sources (e.g. artertial waveform)
 + Changes in fingerprint to predict changes in function
 + Extending survey function on scalar regression to longitudinal outcomes 
 + Standardizing processing and analysis pipelines for wearable accelerometry 

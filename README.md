@@ -1,7 +1,8 @@
 ### Statistical Methods for Digital Fingerprinting and Health Prediction Using High Resolution Accelerometry Data
 
-[Link to presentation](tinyurl.com/koff-thesis)
-Lily Koffman
+[Link to presentation](https://lilykoff.github.io/thesis_defense/job_talk.html)
+
+
 
 Advisor: Ciprian Crainiceanu
 Co-Advisor: John Mushcelli 
