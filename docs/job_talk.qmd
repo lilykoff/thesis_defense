@@ -549,7 +549,7 @@ final_plot
 ```
 
 ## Outline {.question-bullets}
-<div style="font-size: 115%;">
+<div style="font-size: 150%;">
 ::: {.incremental}
 
 
@@ -565,7 +565,7 @@ final_plot
 
 
 ## Outline {.question-bullets}
-<div style="font-size: 115%;">
+<div style="font-size: 150%;">
 - Can we identify someone from their walking pattern measured by a wrist-worn accelerometer? *(Digital fingerprinting)*
 - <span style="color:gray;">Can we identify someone from their walking pattern measured by a wrist-worn accelerometer in big, free-living datasets?</span>
 - <span style="color:gray;"> What else can we learn from walking patterns in free-living data? </span>
@@ -2670,7 +2670,7 @@ Rank-1 (rank-5) % accuracies
 
 
 ## Outline {.question-bullets}
-<div style="font-size: 115%;">
+<div style="font-size: 150%;">
 - Can we identify someone from their walking pattern measured by a wrist-worn accelerometer? *(Digital fingerprinting)*
 <br>
 $\rightarrow$ Yes! 
@@ -2684,7 +2684,7 @@ $\rightarrow$ Yes!
 ---
 
 ## Outline {.question-bullets}
-<div style="font-size: 115%;">
+<div style="font-size: 150%;">
 
 - <span style="color:gray;">Can we identify someone from their walking pattern measured by a wrist-worn accelerometer? *(Digital fingerprinting)* </span>
 <br>
@@ -2814,7 +2814,7 @@ p2
 --- 
 
 ## Outline {.question-bullets}
-<div style="font-size: 115%;">
+<div style="font-size: 150%;">
 
 - <span style="color:gray;">Can we identify someone from their walking pattern measured by a wrist-worn accelerometer? *(Digital fingerprinting)* </span>
 <br>
@@ -2829,7 +2829,7 @@ $\rightarrow$ Yes!
 ---
 
 ## Outline {.question-bullets}
-<div style="font-size: 115%;">
+<div style="font-size: 150%;">
 
 - <span style="color:gray;">Can we identify someone from their walking pattern measured by a wrist-worn accelerometer? *(Digital fingerprinting)* </span>
 <br>
