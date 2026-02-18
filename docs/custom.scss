@@ -188,3 +188,24 @@ $presentation-font-size-root: 32px;
   opacity: 0.9;
   z-index: 30;
 }
+
+/* custom.scss */
+.reveal .gif-inline {
+  max-width: 48%;
+  height: auto;
+  display: inline-block;
+}
+.reveal .gif-stack {
+  max-height: 35vh;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.equalheight {
+  height: 550px !important;
+  width: auto;
+  object-fit: contain;
+}
+
