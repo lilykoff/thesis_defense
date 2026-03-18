@@ -2,7 +2,7 @@
 
 [Link to presentation](https://lilykoff.github.io/thesis_defense/job_talk.html)
 
-[Link to theis](https://github.com/lilykoff/Johns-Hopkins-University-Unofficial-Thesis-Lily)
+[Link to thesis](https://github.com/lilykoff/Johns-Hopkins-University-Unofficial-Thesis-Lily)
 
 Advisor: Ciprian Crainiceanu
 
