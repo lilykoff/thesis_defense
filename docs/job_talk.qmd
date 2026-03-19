@@ -371,6 +371,19 @@ dens_res6 = map_dfr(.x = seq(5, 99, 10),
   mutate(lag = lag / 100) %>% 
   mutate(across(c(vm, lag_vm), ~if_else(.x > 3 | .x < 0, NA, .x)))
 
+dens_res7 = map_dfr(.x = seq(5, 99, 10),
+                   .f = get_dens,
+                   id = 4) %>% 
+  mutate(lag = lag / 100) %>% 
+  mutate(across(c(vm, lag_vm), ~if_else(.x > 3 | .x < 0, NA, .x)))
+
+
+dens_res8 = map_dfr(.x = seq(5, 99, 10),
+                   .f = get_dens,
+                   id = 12) %>% 
+  mutate(lag = lag / 100) %>% 
+  mutate(across(c(vm, lag_vm), ~if_else(.x > 3 | .x < 0, NA, .x)))
+
 get_dens2 = function(lag_tmp){
   dd =
     iu_dat %>%
@@ -2381,9 +2394,14 @@ plot_ly(
 
 ### Functional regression: background
 
-```{r s4}
-#| fig-width: 14
-#| fig-height: 8
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+```{r s41}
+#| fig-width: 7
+#| fig-height: 4
 #| cache: true
 #| out-width: "100%"
 
@@ -2400,7 +2418,7 @@ plot_ly(
 ) %>%
   colorbar(title = "Density") %>%
   layout(
-    title = list(text = "Subset of predictors for one person", y = 0.95),
+    title = list(text = "Predictor for person A", y = 0.95),
     # INCREASE margins here to prevent label clipping
     margin = list(l = 80, r = 80, b = 80, t = 0), 
     scene = list(
@@ -2415,15 +2433,12 @@ plot_ly(
 
 ```
 
----
 
 
-### Functional regression: background
 
-
-```{r s5}
-#| fig-width: 14
-#| fig-height: 8
+```{r s42}
+#| fig-width: 7
+#| fig-height: 4
 #| cache: true
 #| out-width: "100%"
 
@@ -2440,7 +2455,7 @@ plot_ly(
 ) %>%
   colorbar(title = "Density") %>%
   layout(
-    title = list(text = "Subset of predictors for different person", y = 0.95),
+    title = list(text = "Predictor for person B", y = 0.95),
     # INCREASE margins here to prevent label clipping
     margin = list(l = 80, r = 80, b = 80, t = 0), 
     scene = list(
@@ -2452,7 +2467,83 @@ plot_ly(
     )
   )
 
+
 ```
+
+:::
+
+::: {.column width="50%"}
+
+```{r s43}
+#| fig-width: 7
+#| fig-height: 4
+#| cache: true
+#| out-width: "100%"
+
+plot_ly(
+  dens_res7,
+  x = ~vm,
+  y = ~lag_vm,
+  z = ~lag,
+  color = ~density,
+  colors = viridis::viridis(100, option = "B"),
+  type = "scatter3d",
+  mode = "markers",
+  marker = list(size = 1, opacity = 0.5) 
+) %>%
+  colorbar(title = "Density") %>%
+  layout(
+    title = list(text = "Predictor for person C", y = 0.95),
+    # INCREASE margins here to prevent label clipping
+    margin = list(l = 80, r = 80, b = 80, t = 0), 
+    scene = list(
+      xaxis = list(title = "Acceleration (g)"),
+      yaxis = list(title = "Lag Acceleration (g)"),
+      zaxis = list(title = "Lag (s)")
+      # Optional: Adjust camera to zoom out slightly if labels still clip
+      # camera = list(eye = list(x = 1.5, y = 1.5, z = 1.5))
+    )
+  )
+
+
+```
+
+```{r s44}
+#| fig-width: 7
+#| fig-height: 4
+#| out-width: "100%"
+
+plot_ly(
+  dens_res8,
+  x = ~vm,
+  y = ~lag_vm,
+  z = ~lag,
+  color = ~density,
+  colors = viridis::viridis(100, option = "B"),
+  type = "scatter3d",
+  mode = "markers",
+  marker = list(size = 1, opacity = 0.5) 
+) %>%
+  colorbar(title = "Density") %>%
+  layout(
+    title = list(text = "Predictor for person D", y = 0.95),
+    # INCREASE margins here to prevent label clipping
+    margin = list(l = 80, r = 80, b = 80, t = 0), 
+    scene = list(
+      xaxis = list(title = "Acceleration (g)"),
+      yaxis = list(title = "Lag Acceleration (g)"),
+      zaxis = list(title = "Lag (s)")
+      # Optional: Adjust camera to zoom out slightly if labels still clip
+      # camera = list(eye = list(x = 1.5, y = 1.5, z = 1.5))
+    )
+  )
+
+
+```
+
+:::
+
+::::
 
 ---
 
