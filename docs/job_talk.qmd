@@ -3111,28 +3111,6 @@ $s \in \{1, \dots, 1440\}$: each minute of the day
 
 ---
 
-### Survey function on scalar regression: simulation 
-::: {.incremental}
-**First** simulation study to evaluate function on scalar regression in complex survey settings 
-
-+ **Generate** superpopulation 
-  + Each individual has functional outcome and covariate
-  + Individuals belong to clusters (geographic areas)
-  + Functional outcomes correlated within clusters
-+ **Sample** from superpopulation in each iteration of simulation
-  + Selection probability related to functional outcome (informative sampling)
-+ **Compare**: 
-  + Unweighted model w/ standard bootstrap
-  + Weighted models with weighted bootstrap 
-  + Weighted models with complex survey bootstrap (2)
-+ **Evaluate**:   
-  + Bias in coefficient estimation 
-  + Coverage of confidence intervals 
-
-::: 
-
----
-
 
 
 ### Survey function on scalar regression: simulation
@@ -3463,6 +3441,28 @@ xdf %>%
 ```
 
 ---
+
+### Survey function on scalar regression: simulation details
+
+**First** simulation study to evaluate function on scalar regression in complex survey settings 
+
++ **Generate** superpopulation 
+  + Each individual has functional outcome and covariate
+  + Individuals belong to clusters (geographic areas)
+  + Functional outcomes correlated within clusters
++ **Sample** from superpopulation in each iteration of simulation
+  + Selection probability related to functional outcome (informative sampling)
++ **Compare**: 
+  + Unweighted model w/ standard bootstrap
+  + Weighted models with weighted bootstrap 
+  + Weighted models with complex survey bootstrap (2)
++ **Evaluate**:   
+  + Bias in coefficient estimation 
+  + Coverage of confidence intervals 
+
+
+---
+
 
 ### Fingerprinting with other data sources: arterial waveform 
 
