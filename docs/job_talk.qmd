@@ -3284,6 +3284,67 @@ p1 +
 
 ---
 
+### Collaborators 
+
+![](figs/collaborators2.png)
+---
+
+### JHU Biostatistics Faculty, Students, Staff 
+
+Including, but not limited to: 
+
+<div style="font-size: 90%;">
+:::: {.columns}
+
+::: {.column width="50%"}
+**Staff** 
+
++ Mary Joy Argo
++ Maria Beeson
++ Nanette Bell
++ Mark Chiveral 
++ Kim Clay
++ Kara Friedman
++ Devon Renwick
++ Fallon Bachman 
+
+**JHPCE Admin and Engineers**
+
++ Mark Miller
++ Jeffrey Tunison
++ Jiong Yang 
+
+:::
+
+
+::: {.column width="50%"}
+
+**620s Teaching Team**
+
++ Marie Diener-West, PhD
++ Karen Bandeen-Roche, PhD, MS
++ Daniel Obeng, ScM, MS
+
+
+**Hallway conversations and life advice** 
+
++ Margaret Taub, PhD
++ Elizabeth Colantuoni, PhD, ScM
++ John McGready, PhD, ScM
+
+**Peers and classmates** 
+
+**Wearable and Implantable Technology (WIT) working group** 
+
+::: 
+
+::::
+
+</div>
+
+---
+
+
 ### Family 
 
 ![](figs/Family.png)
