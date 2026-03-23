@@ -2697,23 +2697,26 @@ model = mgcv::gam(
 
 ---
 
+
 ### Functional regression results
 
 :::: {.columns}
 
 ::: {.column width="45%"}
 
-Rank-1 (rank-5) % accuracies 
+
+Rank-1 % accuracies 
 
 
 + Train and test on session 1
-  + Logistic regression: 92 (97) 
-  + <span style="color:#008767;">Functional regression: 98 (100)</span>
+  + Logistic regression w/ grid cells: 92 
+  + <span style="color:#008767;">Functional regression: 98 </span>
 
 + Train on session 1, test on session 2 
-  + Logistic regression: 41 (75)
-  + <span style="color:#008767;">Functional regression: 53 (69)</span>
-:::
+  + Logistic regression w/ grid cells: 41 
+  + <span style="color:#008767;">Functional regression: 53 </span>
+
+::: 
 
 ::: {.column width="55%"}
 
@@ -2729,18 +2732,19 @@ Rank-1 (rank-5) % accuracies
 
 ::: {.column width="45%"}
 
-Rank-1 (rank-5) % accuracies 
+Rank-1 % accuracies 
 
 
 + Train and test on session 1
-  + Logistic regression: 92 (97) 
-  + <span style="color:#008767;">Functional regression: 98 (100)</span>
-  + XGBoost: 93 (99)
+  + Logistic regression w/ grid cells: 92 
+  + <span style="color:#008767;">Functional regression: 98 </span>
+  + XGBoost w/ grid cells: 93 
 
 + Train on session 1, test on session 2 
-  + Logistic regression: 41 (75)
-  + Functional regression: 53 (69)
-  + <span style="color:#008767;">XGBoost: 58 (78)</span>
+  + Logistic regression w/ grid cells: 41 
+  + Functional regression: 53 
+  + <span style="color:#008767;">XGBoost w/ grid cells: 58</span>
+
 
 :::
 
@@ -2817,6 +2821,7 @@ $\rightarrow$ Yes!
 - <span style="color:#008767;">100\%</span> rank-5\% accuracy (correct subject is in the top 650 predictions)
 
 </div>
+
 ---
 
 
@@ -3052,7 +3057,7 @@ $s \in \{1, \dots, 1440\}$: each minute of the day
 <div style="font-size: 95%;">
 + Fast univariate inference (FUI) [@Cui2021]
 
-+ Fit separate (univariate) GLM at each point $s$, smooth the resulting point estimates 
++ Fit separate GLM at each point $s$, smooth the resulting point estimates 
 
 + Bootstrap subjects to get confidence bands 
 
@@ -3068,7 +3073,7 @@ $s \in \{1, \dots, 1440\}$: each minute of the day
 
 + Fast univariate inference (FUI) [@Cui2021]
 
-+ Fit separate (univariate) GLM at each point $s$, smooth the resulting point estimates 
++ Fit separate GLM at each point $s$, smooth the resulting point estimates 
 
 + Bootstrap subjects to get confidence bands 
 
@@ -3236,6 +3241,7 @@ p1 = df2 %>%
   scale_x_continuous(breaks= c(60, seq(240, 1440, 4 * 60)), labels = c("01:00", "04:00", "08:00", "12:00", "16:00", "20:00", "24:00")) +
   labs(x = "Hour of Day", y = "Steps per minute") +
   scale_color_manual(values = c("#CBA052", "#008767FF"), name = "Model") +
+  scale_fill_manual(values = c("#CBA052", "#008767FF"), name = "Model") +
   theme(legend.position = "bottom") +
   geom_ribbon(aes(x = s, ymin = lower, ymax = upper, fill = model), alpha = 0)
 p1
@@ -3252,9 +3258,9 @@ p1 +
   geom_ribbon(aes(x = s, ymin = lower, ymax = upper, fill = model), alpha = .5) +
   geom_line(aes(color = model), linewidth = 1.2)  +
   scale_fill_manual(values = c("#CBA052", "#008767FF"), name = "Model",
-                    labels = c("Unweighted", "BRR")) +
+                    labels = c("Unweighted", "Weighted w/ BRR")) +
   scale_color_manual(values = c("#CBA052", "#008767FF"), name = "Model",
-                    labels = c("Unweighted", "BRR")) 
+                    labels = c("Unweighted", "Weighted w/ BRR")) 
   
 ```
 
