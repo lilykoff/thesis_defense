@@ -3137,7 +3137,7 @@ $s \in \{1, \dots, 1440\}$: each minute of the day
 ---
 
 
-### Survey function on scalar regression: simulation
+### Survey function on scalar regression: simulation results
 
 ```{r survey sim res}
 #| cache: true 
@@ -3308,7 +3308,7 @@ p1 +
 ![](figs/collab.jpg)
 ---
 
-### JHU Biostatistics Faculty, Students, Staff 
+### JHU Biostatistics Faculty, Staff, Students
 
 Including, but not limited to: 
 
@@ -3319,13 +3319,13 @@ Including, but not limited to:
 **Staff** 
 
 + Mary Joy Argo
++ Fallon Bachman 
 + Maria Beeson
 + Nanette Bell
 + Mark Chiveral 
 + Kim Clay
 + Kara Friedman
 + Devon Renwick
-+ Fallon Bachman 
 
 **JHPCE Admin and Engineers**
 
@@ -3338,18 +3338,23 @@ Including, but not limited to:
 
 ::: {.column width="50%"}
 
+
 **620s Teaching Team**
 
-+ Marie Diener-West, PhD
 + Karen Bandeen-Roche, PhD, MS
++ Marie Diener-West, PhD
 + Daniel Obeng, ScM, MS
 
 
 **Hallway conversations and life advice** 
 
-+ Margaret Taub, PhD
 + Elizabeth Colantuoni, PhD, ScM
 + John McGready, PhD, ScM
++ Daniel Obeng, ScM, MS
++ Margaret Taub, PhD
+
+
+**Thesis committee**
 
 **Peers and classmates** 
 
@@ -3395,6 +3400,7 @@ Including, but not limited to:
 <div style="font-size: 150%;">
 
 - Link to slides: [tinyurl.com/koff-thesis](tinyurl.com/koff-thesis) 
+- [Link to thesis](https://github.com/lilykoff/Johns-Hopkins-University-Unofficial-Thesis-Lily)
 - Email: [lkoffma2@jh.edu](lkoffma2@jh.edu)
 - Website: [lilykoff.com](lilykoff.com)
 - Github: [github.com/lilykoff](github.com/lilykoff)
